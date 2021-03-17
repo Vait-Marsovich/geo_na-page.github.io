@@ -38,7 +38,7 @@
       <td width="80" align="center" nowrap="nowrap"><p1><a href="climat.htm">Климат</a></p1></td>
       <td width="100" align="center"><p1><a href="voda.htm">Водные ресурсы</a></p1></td>
       <td width="100" align="center" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
-      <td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
+      <td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафты</a></p1></td>
       <td width="100" align="center" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
       <td width="100" align="center" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
       <td width="80" align="center" nowrap="nowrap"><p1><a href="onas.htm">О нас</a></p1></td>
@@ -828,6 +828,197 @@ for(var q=0; q<questions.length; ++q) {
               <input onClick="Score()" value="Проверить результаты" type="button">
             </form>
 			</td></tr>
+		  
+	 
+		  <tr>
+                  
+                  <td><br>
+                    <p4>Переведите на испанский язык "горы".<br><br><input id="z_1" type="text"></p4><br><br>
+                    <br>
+                    <p4>Почему на испанских картах Северной Америки времен 16 века некоторые территории назывались "ненужные земли"? Ответ состоит из ДВУХ слов.<br><br><input id="z_2" type="text"></p4><br><br>
+                    <p4>В прошлом веке нефтяных и газодобывающих вышек в Северном море еще не было, и до Уренгоя комсомольцы еще не добрались. Но улицы американских городов уже освещались газовыми фонарями. А где доставали этот газ? В ответе достаточно указать ресурс одним словом.<br><br><input id="z_3" type="text"></p4><br><br>
+                    <button onclick="proverit();">Проверить</button>
+                    <div id="rezultat"></div>
+                    <script>
+function proverit(){
+pr_otv_zadachi_1 = "Кордильеры";
+pr_otv_zadachi_2 = "Отсутствие золота";
+pr_otv_zadachi_3 = "Уголь";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script> 
+                  <div class="dropdown"> <button onclick="myFuncteon()" class="dropbtn">Коментарии к открытым вопросам</button>
+                      <div id="myDrepdown" class="dropdown-content">
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 1</a></span>
+                          <div class="drepdown-content">Кордильеры</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 2</a></span>
+                          <div class="drepdown-content">Отсутствие золота</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 3</a></span>
+                          <div class="drepdown-content">Его получали на заводах из каменного угля</div>
+                        </div>
+                      </div>
+                    </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFuncteon() {
+                        document.getElementById("myDrepdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script> <br>
+					<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 380px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+      
+//Translit nase vse tak vot dalshe idet kod opisyvaushiy stroenie vypadaushey knopki
+.drapbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drapdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drapdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drapdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drapdown-content a:hover {background-color: #ddd;}
+
+.drapdown:hover .drapdown-content {display: block;}
+
+.drapdown:hover .drapbtn {background-color: #3e8e41;}
+      
+.drepbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}      
+      
+.drepdown {
+    position: relative;
+    display: inline-block;
+}      
+
+.drepdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+      
+.drepdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drepdown-content a:hover {background-color: #ddd;}
+
+.drepdown:hover .drepdown-content {display: block;}
+
+.drepdown:hover .drepbtn {background-color: #3e8e41;}
+
+.dripdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style></td>
+                 
+                </tr>
            
 	  <tr>
 	  <td height="30"></td></tr>

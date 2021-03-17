@@ -107,7 +107,7 @@
           </td>
         </tr>
         <tr height="7">
-          <td height="7" bgcolor="#FFFDF9">
+          <td height="7" bgcolor="#FFFDF9"> <br>
           </td>
         </tr>
         <tr height="75">
@@ -117,17 +117,24 @@
               bgcolor="#130033">
               <tbody>
                 <tr align="center" height="75">
-                 <td width="25" align="center" nowrap="nowrap"><img src="images/tp.gif" width="15"></td>
-      <td width="100" align="center" ><p1><a href="egp.htm">Население и хозяйство</a></p1></td>
-      <td width="80" align="center" nowrap="nowrap"><p1><a href="fgp.htm">ФГП</a></p1></td>
-      <td width="80" align="center" nowrap="nowrap"><p1><a href="climat.htm">Климат</a></p1></td>
-      <td width="100" align="center"><p1><a href="voda.htm">Водные ресурсы</a></p1></td>
-      <td width="100" align="center" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
-      <td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
-      <td width="100" align="center" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
-      <td width="100" align="center" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
-      <td width="80" align="center" nowrap="nowrap"><p1><a href="onas.htm">О нас</a></p1></td>
-		<td width="25" align="center" nowrap="nowrap"><img src="images/tp.gif" width="15"></td>
+                  <td align="center" width="25" nowrap="nowrap"><img src="images/tp.gif"
+
+                      width="15"></td>
+                  <td align="center" width="100"><p1><a href="egp.htm">Население
+                        и хозяйство</a></p1></td>
+                  <td align="center" width="80" nowrap="nowrap"><p1><a href="fgp.htm">ФГП</a></p1></td>
+                  <td align="center" width="80" nowrap="nowrap"><p1><a href="climat.htm">Климат</a></p1></td>
+                  <td align="center" width="100"><p1><a href="voda.htm">Водные
+                        ресурсы</a></p1></td>
+                  <td align="center" width="100" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
+                  <td align="center" width="100" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
+                  <td align="center" width="100" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
+                  <td align="center" width="100" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
+                  <td align="center" width="80" nowrap="nowrap"><p1><a href="onas.htm">О
+                        нас</a></p1></td>
+                  <td align="center" width="25" nowrap="nowrap"><img src="images/tp.gif"
+
+                      width="15"></td>
                 </tr>
               </tbody>
             </table>
@@ -3275,6 +3282,202 @@ for(var q=0; q<questions.length; ++q) {
                 <tr>
                   <td width="50"><br>
                   </td>
+                  <td><br>
+                    <p4>Французский посол при португальском дворе месье де Вильмен прославился не своей политической деятельностью, а, так сказать, работами в области медицины. Его услугами пользовалась даже Екатерина Медичи, в результате чего нововведение француза стало популярным. Если верить источнику, ставшему популярным в 1988 году, таким же распространителем нововведения в мировом масштабе стал другой человек. Назовите его имя и фамилию.
+<br><br><input id="z_1" type="text"></p4><br><br>
+                    <br>
+                    <p4>Около двадцати пяти тысяч лет назад Берингов перешеек послужил своего рода мостом между континентами. В связи с этим Говард Зинн замечает, что это слово не так уж ошибочно. Назовите это слово.<br><br><input id="z_2" type="text"></p4><br><br>
+                    <p4>Авраам Линкольн считался порядочным и принципиальным человеком. Когда Линкольн увидел в свежеизданной биографии, что ЭТОТ ЧЕЛОВЕК прочёл некую книгу, то тут же бросился читать её. Назовите этого человека.<br><br><input id="z_3" type="text"></p4><br><br>
+                    <button onclick="proverit();">Проверить</button>
+                    <div id="rezultat"></div>
+                    <script>
+function proverit(){
+pr_otv_zadachi_1 = "Христофор Колумб";
+pr_otv_zadachi_2 = "Индейцы";
+pr_otv_zadachi_3 = "Авраам Линкольн";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script> 
+                  <div class="dropdown"> <button onclick="myFuncteon()" class="dropbtn">Коментарии к открытым вопросам</button>
+                      <div id="myDrepdown" class="dropdown-content">
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 1</a></span>
+                          <div class="drepdown-content">Жан Нико де Вильмен стал популяризировать табак как лечебное средство, дав никотину свое имя. В "Песне о вреде курения", прозвучавшей в фильме "Остров сокровищ" 1988 года, Христофор Колумб "научил весь мир курить табак".</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 2</a></span>
+                          <div class="drepdown-content">Как известно, Колумб ошибочно считал открытые им земли частью Индии, поэтому назвал местных жителей индейцами. Много тысяч лет назад предки индейцев перебрались в Америку из Азии через Берингов перешеек. Поэтому можно сказать, что индейцы по происхождению действительно являются азиатами.</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 3</a></span>
+                          <div class="drepdown-content">В биографии Линкольна соврали о книге, которую Линкольн якобы прочитал. Чтобы не допустить неправды в собственной биографии, Линкольн тут же прочёл эту книгу.</div>
+                        </div>
+                      </div>
+                    </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFuncteon() {
+                        document.getElementById("myDrepdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script> <br>
+					<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 380px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+      
+//Translit nase vse tak vot dalshe idet kod opisyvaushiy stroenie vypadaushey knopki
+.drapbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drapdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drapdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drapdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drapdown-content a:hover {background-color: #ddd;}
+
+.drapdown:hover .drapdown-content {display: block;}
+
+.drapdown:hover .drapbtn {background-color: #3e8e41;}
+      
+.drepbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}      
+      
+.drepdown {
+    position: relative;
+    display: inline-block;
+}      
+
+.drepdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+      
+.drepdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drepdown-content a:hover {background-color: #ddd;}
+
+.drepdown:hover .drepdown-content {display: block;}
+
+.drepdown:hover .drepbtn {background-color: #3e8e41;}
+
+.dripdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style></td>
+                  <td width="50"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="1000" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td width="50"><br>
+                  </td>
                   <td> <p3>Источники:</p3> <br>
                     <br>
                     <ol class="ololo">
@@ -3301,6 +3504,5 @@ for(var q=0; q<questions.length; ++q) {
         </tr>
       </tbody>
     </table>
-    
   </body>
 </html>

@@ -39,7 +39,7 @@
 <td width="80" align="center" nowrap="nowrap"><p1><a href="climat.htm">Климат</a></p1></td>
 <td width="100" align="center"><p1><a href="voda.htm">Водные ресурсы</a></p1></td>
 <td width="100" align="center" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
-<td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
+<td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафты</a></p1></td>
 <td width="100" align="center" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
 <td width="100" align="center" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
 <td width="80" align="center" nowrap="nowrap"><p1><a href="onas.htm">О нас</a></p1></td>
@@ -243,8 +243,14 @@
                              </tr>
                               
                             
-     <tr>
-                               <td height="20"></td>
+    <td height="30"></td>
+                             </tr>
+                              <tr>
+                           <td>  <img src= "images/klimatkarta.jpg" class="center-img"> </td>  </tr>
+                            
+   
+                             <tr>
+                               <td height="30"></td>
                              </tr>
                              <tr>
                                <td align="left"><p4></p4></td>
@@ -254,9 +260,7 @@
                            </tbody>
                            </table></td>
     </tr>
-						 <tr>
-                                 <td height="20"></td>
-                               </tr>
+						 
                                 <tr>
 			
       <td>
@@ -573,7 +577,205 @@ for(var q=0; q<questions.length; ++q) {
               <input onClick="Score()" value="Проверить результаты" type="button">
             </form>
 			</td></tr>
-           
+		  
+		  <table width="960" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td width="50"><br>
+                  </td>
+                  <td><br>
+                    <p4>Индейцы называли это место "Пылающая земля". Белые дали ему другое название. Воспроизведите это название двумя словами.<br><br><input id="z_1" type="text"></p4><br><br>
+                    <br>
+                    <p4>В американском исследовательском центре, занимающемся ИХ прогнозированием, есть кафе «Летающая корова». Назовите ИХ.<br><br><input id="z_2" type="text"></p4><br><br>
+                    <p4>Одна операция армии США должна была затруднить сообщение вьетнамских войск при помощи специальных химикатов. На опасения учёных один сенатор отвечал, что «лучше ОН, чем бомбы». Назовите ЕГО.<br><br><input id="z_3" type="text"></p4><br><br>
+                    <button onclick="proverit();">Проверить</button>
+                    <div id="rezultat"></div>
+                    <script>
+function proverit(){
+pr_otv_zadachi_1 = "долина смерти";
+pr_otv_zadachi_2 = "торнадо";
+pr_otv_zadachi_3 = "дождь";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script> 
+                  <div class="dropdown"> <button onclick="myFuncteon()" class="dropbtn">Коментарии к открытым вопросам</button>
+                      <div id="myDrepdown" class="dropdown-content">
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 1</a></span>
+                          <div class="drepdown-content">Одно из самых жарких мест Северной Америки.</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 2</a></span>
+                          <div class="drepdown-content">В некоторых штатах США регулярно возникают торнадо. Сильные торнадо поднимают в воздух всё и могут заставить летать даже корову.</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 3</a></span>
+                          <div class="drepdown-content">В ходе операции «Попа́й» с самолётов было сброшено несколько тысяч тонн йо́дистого серебра с целью увеличить количество осадков, тем самым испортив урожай и размыв тропу Хо Ши Мина. Сенатор Кле́йборн Пелл, изначально считавший, что эта операция поможет избежать лишних бомбардировок, затем изменил своё мнение об опасностях антропогенного изменения климата.</div>
+                        </div>
+                      </div>
+                    </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFuncteon() {
+                        document.getElementById("myDrepdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script> <br>
+					<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 380px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+      
+//Translit nase vse tak vot dalshe idet kod opisyvaushiy stroenie vypadaushey knopki
+.drapbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drapdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drapdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drapdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drapdown-content a:hover {background-color: #ddd;}
+
+.drapdown:hover .drapdown-content {display: block;}
+
+.drapdown:hover .drapbtn {background-color: #3e8e41;}
+      
+.drepbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}      
+      
+.drepdown {
+    position: relative;
+    display: inline-block;
+}      
+
+.drepdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+      
+.drepdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drepdown-content a:hover {background-color: #ddd;}
+
+.drepdown:hover .drepdown-content {display: block;}
+
+.drepdown:hover .drepbtn {background-color: #3e8e41;}
+
+.dripdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style></td>
+                  <td width="50"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+           <tr>
+      <td height="15"></td>
+    </tr>
 			
 	  <tr>
       <td><p5>Источники</p5></td>
@@ -680,6 +882,7 @@ ISBN 5-211-03175-Х</p4>
 		   <td width="960" align="left"><p4>  <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences">sciencedirect.com</a> </p4>
              </td> </tr>
              
+		  
 	  
   
                               

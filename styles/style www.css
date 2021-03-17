@@ -212,3 +212,12 @@ nav ul { font-family: Verdana;
   opacity: 1;
   transform: scaleY(1);
 }
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
+.leftimg  {
+    float: left; /* Выравнивание по правому краю  */ 
+    margin: 7px 7px 7px 0px; /* Отступы вокруг картинки */
+}

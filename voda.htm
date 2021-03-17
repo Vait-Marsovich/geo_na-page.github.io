@@ -51,7 +51,7 @@
                   <td align="center" width="100"><p1><a href="voda.htm">Водные
                         ресурсы</a></p1></td>
                   <td align="center" width="100" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
-                  <td align="center" width="100" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
+                  <td align="center" width="100" nowrap="nowrap"><p1><a href="land.htm">Ландшафты</a></p1></td>
                   <td align="center" width="100" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
                   <td align="center" width="100" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
                   <td align="center" width="80" nowrap="nowrap"><p1><a href="onas.htm">О
@@ -1730,13 +1730,12 @@
                         </tr>
                         <tr>
                           <td>
-                            <div align="center"><img src="images/Junoled.jpg" height="398"
+                            <div align="center"><img src="images/yellowstone.jpg" height="398"
 
                                 width="960"></div>                          </td>
                         </tr>
                         <tr>
-                          <td class="talbe" align="center"><p6>Ледниковое поле
-                              Джуно<a href="#l2"> Рис. 2</a> </p6></td>
+                          <td class="talbe" align="center"><p6>Призматический горячий источник Йеллоустоунского национального парка<a href="#l2"> Рис. 2</a> </p6></td>
                         </tr>
                         <tr>
                           <td height="20"><br>                          </td>
@@ -1857,8 +1856,8 @@
                                   Рис.1 Michael Campbell Photography </a></li>
                               <li>
                                 <article id="l2"></article>
-                                <a href="https://gaz.wiki/wiki/ru/File:Juneau_Ice_Field_%288025725933%29.jpg">
-                                  Рис.2 gaz.wiki </a></li>
+                                <a href="https://blogs.agu.org/magmacumlaude/2016/06/27/yellowstone-hot-springs-upsetting-your-colorscale/">
+                                  Рис.2 blogs.agu.org </a></li>
                               <li>
                                 <article id="l5"></article>
                                 <a href="https://bigenc.ru/">3. Большая
@@ -2007,6 +2006,201 @@ document.writeln('<input type=radio name="q' + idx + '" value="' + i +
 
 type="button"> </form>                          </td>
                         </tr>
+					  <table width="1000" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td width="40">
+                  </td>
+                  <td><br>
+                    <p4>В первой половине девятнадцатого века выражение "вниз по АЛЬФЕ" для определенной категории людей означало смертный приговор. Какое название мы заменили АЛЬФОЙ?<br><br><input id="z_1" type="text"></p4><br>
+                    <br>
+                    <p4>В американских школах учителя географии, чтобы школьники могли без великого труда перечислить все эти объекты, предлагают ученикам запомнить короткое и родное слово "домА" (по-английски — "homes", по буквам: эйч, оу, эм, и, эс). Назовите объекты в порядке, зашифрованном в слове "домА", без запятых с большой буквы.<br><br><input id="z_2" type="text"></p4><br><br>
+                    <p4>ОН образовался при таянии ледника Лаврентида. Разрушая породу, ОН отдалился от своего первоначального местоположения на одиннадцать километров, создав ущелье. Назовите ЕГО.<br><br><input id="z_3" type="text"></p4><br><br>
+                    <button onclick="proverit();">Проверить</button>
+                    <div id="rezultat"></div>
+                    <script>
+function proverit(){
+pr_otv_zadachi_1 = "Миссисипи";
+pr_otv_zadachi_2 = "Гурон Онтарио Мичиган Эри Верхнее";
+pr_otv_zadachi_3 = "Ниагарский водопад";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script> 
+                  <div class="dropdown"> <button onclick="myFuncteon()" class="dropbtn">Коментарии к открытым вопросам</button>
+                      <div id="myDrepdown" class="dropdown-content">
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 1</a></span>
+                          <div class="drepdown-content">Эта категория — беглые рабы. Когда их ловили, то чаще всего возвращали на плантации по текущей с севера на юг Миссисипи — главной транспортной артерии рабовладельческих штатов.</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 2</a></span>
+                          <div class="drepdown-content">Слово "Homes" используется для запоминания названий Великих озер: Huron, Ontario, Michigan, Erie, Superior.</div>
+                        </div>
+                        <div class="drepdown"> <span><a href="">Комментарий к вопросу 3</a></span>
+                          <div class="drepdown-content">Ниагарский водопад постепенно стачивает горную породу, на которой расположено озеро. Таким образом, водопад врезается вглубь озера, которое является его источником. В результате образуется ущелье с высокими краями. Название Лаврентид связано с рекой святого Лаврентия, протекающей неподалеку.</div>
+                        </div>
+                      </div>
+                    </div>
+                  <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFuncteon() {
+                        document.getElementById("myDrepdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                          }
+                        }
+                      }
+                    }
+                    </script> <br>
+					<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 380px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+      
+//Translit nase vse tak vot dalshe idet kod opisyvaushiy stroenie vypadaushey knopki
+.drapbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drapdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drapdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drapdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drapdown-content a:hover {background-color: #ddd;}
+
+.drapdown:hover .drapdown-content {display: block;}
+
+.drapdown:hover .drapbtn {background-color: #3e8e41;}
+      
+.drepbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}      
+      
+.drepdown {
+    position: relative;
+    display: inline-block;
+}      
+
+.drepdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+      
+.drepdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drepdown-content a:hover {background-color: #ddd;}
+
+.drepdown:hover .drepdown-content {display: block;}
+
+.drepdown:hover .drepbtn {background-color: #3e8e41;}
+
+.dripdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+</style></td>
+                  <td width="40"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
                         <tr>
                           <td><br>                          </td>
                         </tr>
