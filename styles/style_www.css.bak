@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251">
+    <link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+
+      title="Переносить длинные строки">
+  </head>
+  <body>
+    <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta http-equiv="content-type" content="text/html; charset=windows-1251"&gt;
+    &lt;link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+
+      title="Переносить длинные строки"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;pre&gt;&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv="content-type" content="text/html; charset=windows-1251"&amp;gt;
+    &amp;lt;link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+
+      title="Переносить длинные строки"&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;pre&amp;gt;@charset "utf-8";
+/* CSS Document */
+.top-img {margin-bottom: 38px}
+
+p
+{font-family: Verdana;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+text-align: right;
+color: #130033;}
+
+p2 {font-family: Verdana;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+text-align: left;
+color: #608B3E;
+margin-top: 2px}
+
+p420 {font-family: Verdana;
+font-style: normal;
+font-size: 15px;
+text-align: left;
+color: #000000;}
+
+p421 {font-family: Verdana;
+font-style: normal;
+font-size: 10px;
+text-align: left;
+color: #333333;}
+
+.rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
+.leftimg  {
+    float: left; /* Выравнивание по правому краю  */ 
+    margin: 7px 7px 7px 0px; /* Отступы вокруг картинки */
+}
+body
+{padding: 0px; margin: 0px; background-color: beige;}
+
+table
+{padding: 0px; margin: auto; cellspacing: 0; cellpadding: 0;}
+
+.td
+{padding: 0px; margin: 0px; vertical-align: top}
+
+p1
+{font-family: Verdana;
+font-style: normal;
+font-size: 15px;
+text-align: center;
+font-weight: bold;
+color: #F5F2E6;}&lt;br&gt;
+
+a:link {color: #99C6E1;}
+a:visited {color: #99C6E1;}
+a:hover {color: #EBAE1D;}
+a {text-decoration: none}
+
+.ssilka1
+{
+a:link {color: #130033;}
+a:visited {color: #99C6E1;}
+a:hover {color: #EBAE1D;}
+}
+
+body {scrollbar-base-color: #99C6E1;
+scrollbar-arrow-color: #608B3E;}
+
+body::-webkit-scrollbar 
+{width: 15px;}
+ 
+body::-webkit-scrollbar-thumb 
+{background-color: #608B3E;}
+
+
+&amp;lt;/pre&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 30%;
+  float: left;
+  position: relative;
+  font-family: Verdana;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #404040;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: #D5B45B; }
+.submenu-link:after {
+  content: "\f107";
+  font-family: Verdana;
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #273037;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.wrapper {
+  padding: 20px 40px;
+  font-family: 'Arial';
+  font-size: 16px;
+}
+
+.wrapper .inputbox {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.wrapper .inputbox.good {
+  background: #b5ffa9;
+}
+
+.wrapper .inputbox.bad {
+  background: #FC2626;
+}
+
+.wrapper .btn {
+  display: block;
+  margin: 30px 0;
+  border: 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wrapper .btn:hover {
+  background: #FC2626;
+}
+
+.result {
+  margin: 50px 0;
+  font-weight: bold;
+}
+
+.result.good {
+  color: #4ea140;
+}
+
+.result.bad {
+  color: #FC2626;
+}
+
+</pre>
+  </body>
+</html>

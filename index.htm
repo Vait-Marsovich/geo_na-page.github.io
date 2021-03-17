@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="styles/style www.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="keywords" content="Америка">
+<meta name="description" content="Северная Америка">
+	
+	
+	<SCRIPT language=javascript>
+
+function RandomBackground(images,btags)
+{
+ si=0; 
+ ci=0;
+ cc=0;
+ imageSet = new Array();
+ ei = images.length;
+  for (i=1;i<ei;i++) {
+    if (images.charAt(i) == ' ' || images.charAt(i) == ',') {
+      imageSet[cc] = images.substring(si,i);
+      cc++;
+      si=i+1;
+      }
+    }
+  ind = Math.floor(Math.random() *cc);
+  document.writeln("<td "+btags+" background=\""+imageSet[ind]+"\">");
+}
+
+
+</SCRIPT>
+
+	
+</head>
+
+<body><table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr height="200" background="images/lline.png" bgcolor="#FFFDF9">
+		<td><table width="1000" height="200" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="55">&nbsp;</td>
+      <td width="400px"><img src="images/Logo.png" width="148px" height="143px" border="0" class="top-img"></td>
+      <td width="500"><p><a href="index.htm"><a2>Энциклопедия Северной Америки</a2></a></p>
+      <p>&nbsp;</p></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+    <tr height="7">
+      <td height="7" bgcolor="#FFFFFF"></td>
+    </tr>
+    <tr height="75">
+      <td height="75"><table width="1000" height="100" border="0" cellspacing="0" cellpadding="0" bgcolor="#130033">
+  <tbody>
+    <tr height="75">
+		<td width="25" align="center" nowrap="nowrap"><img src="images/tp.gif" width="15"></td>
+      <td width="100" align="center" ><p1><a href="egp.htm">Население и хозяйство</a></p1></td>
+      <td width="80" align="center" nowrap="nowrap"><p1><a href="fgp.htm">ФГП</a></p1></td>
+      <td width="80" align="center" nowrap="nowrap"><p1><a href="climat.htm">Климат</a></p1></td>
+      <td width="100" align="center"><p1><a href="voda.htm">Водные ресурсы</a></p1></td>
+      <td width="100" align="center" nowrap="nowrap"><p1><a href="geology.htm">Геология</a></p1></td>
+      <td width="100" align="center" nowrap="nowrap"><p1><a href="land.htm">Ландшафт</a></p1></td>
+      <td width="100" align="center" nowrap="nowrap"><p1><a href="hist.htm">История</a></p1></td>
+      <td width="100" align="center" nowrap="nowrap"><p1><a href="slov.htm">Словарь</a></p1></td>
+      <td width="80" align="center" nowrap="nowrap"><p1><a href="onas.htm">О нас</a></p1></td>
+		<td width="25" align="center" nowrap="nowrap"><img src="images/tp.gif" width="15"></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+    <tr height="7">
+      <td height="7" bgcolor="#FFFFFF" ></td>
+    </tr>
+	 
+    <tr>
+      <td height="666" width="1000">
+		  <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+      <td>
+		  <SCRIPT>
+RandomBackground("images/g_1.jpg images/g_2.jpg images/g_3.jpg images/g_4.jpg images/g_5.jpg images/g_6.jpg images/g_7.jpg images/g_8.jpg images/g_9.jpg");
+          </SCRIPT><img src="images/tp.gif" width="1000" height="666">
+		</td>
+    </tr>	  
+			</table>  
+
+</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
