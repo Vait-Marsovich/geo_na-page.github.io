@@ -15,7 +15,7 @@
 
 
 <meta http-equiv="Content-Type" content="text/html" charset="windows-1251">
-<meta name="keywords" content="располоожение крайние точки">
+<meta name="keywords" content="расположение крайние точки">
 <meta name="description" cxontent="Северная Америка">
 <script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
 
@@ -92,9 +92,24 @@
 	  </tr>
 	 
       <td> <br>
-        <br>
-        <embed src="images/map-3.swf" height="563" width="1000"> <br>
-        <br>
+        <div id='ruffle'></div>
+        <script src='https://e9x.github.io/ruffle/ruffle.js'></script>
+        <script>
+          var swfobject = {};
+
+          swfobject.embedSWF = function(url, cont, width, height){
+              var ruffle = window.RufflePlayer.newest(),
+                  player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                      width: width,
+                      height: height,
+                      style: 'width: ' + width + 'px; height: ' + height + 'px',
+                  });
+              
+              player.load({ url: url });
+          }
+
+          swfobject.embedSWF('images/map-3.swf', 'ruffle', 800, 500);
+        </script>
       </td>
 
     <tr>
